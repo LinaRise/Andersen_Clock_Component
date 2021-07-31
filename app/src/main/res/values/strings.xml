@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Andersen Clock Component</string>
+    <string name="attributes_change">Attributes change</string>
+    <string name="in_program_change">In Program change</string>
+</resources>
