@@ -40,7 +40,7 @@ class CustomClockView @JvmOverloads constructor(
         const val SECOND_HAND_WIDTH_2 = 3f
         const val CENTER_RADIUS = 20f
         const val PADDING = 50
-        const val SMOOTH_HOUR = 0.0002f
+        const val SMOOTH_HOUR = 0.081f
         const val SMOOTH_MINUTE = 0.016f
     }
 
@@ -168,7 +168,7 @@ class CustomClockView @JvmOverloads constructor(
 
     private fun drawHourLine(canvas: Canvas?) {
         canvas?.save()
-        canvas?.rotate(mHAgree + mSAgree * SMOOTH_HOUR, centerX.toFloat(), centerY.toFloat())
+        canvas?.rotate(mHAgree + mMAgree * SMOOTH_HOUR, centerX.toFloat(), centerY.toFloat())
         canvas?.drawLine(
             centerX.toFloat(),
             centerY.toFloat(), centerX.toFloat(), centerY.toFloat() - 250, hourHandPaint
